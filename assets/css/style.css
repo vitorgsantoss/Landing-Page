@@ -1,0 +1,27 @@
+.intro-content{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    min-height: 100vh;
+    top: -6.5rem;
+    gap: var(--gap);
+}
+
+.intro-text-content, .intro-img-content{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+}
+
+.intro-text-content h2{
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+.intro-img-content img{
+    max-width: 100%;
+    height: auto;
+
+}

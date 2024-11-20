@@ -6,6 +6,7 @@
     width: 100%;
     background: var(--white-color);
     border-bottom: 0.1rem solid var(--light-gray-color);
+    z-index: 1;
 }
 
 .menu-content{
