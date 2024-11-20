@@ -39,4 +39,4 @@ A landing page é um modelo simples e responsivo, criado para treinar habilidade
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   https://github.com/vitorgsantoss/Landing-Page.git
