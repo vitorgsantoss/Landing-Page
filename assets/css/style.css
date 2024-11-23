@@ -14,14 +14,52 @@
     
 }
 
-.intro-text-content h2{
-    font-size: 6rem;
-    margin-bottom: 3rem;
-    line-height: 1.2;
-}
-
 .intro-img-content img{
     max-width: 100%;
     height: auto;
 
+}
+
+.top3-content{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    max-width: 64rem;
+    text-align: center;
+}
+
+.grid-content-heading{
+    margin-bottom: 1rem;
+}
+
+.grid-description{
+    margin-bottom: 5rem;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.gallery-grid h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left: 6rem;
+    padding-bottom: 2rem;
+}
+
+.gallery-grid h3::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    top: -2rem;
+    left: -1rem;
+    font-size: 6rem;
+    font-style: italic;
+    transform: rotate(3deg);
+
+    
 }
