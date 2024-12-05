@@ -51,3 +51,28 @@ h6{
 a{
     text-decoration: none;
 }
+
+table{
+    width: 100%;
+    min-width: 500px;
+}
+
+table caption{
+    text-align: left;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+table td, table th{
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid var(--light-gray-color);
+}
+table tfoot td{
+    text-align: right;
+}
+
+table tfoot td, table th{
+    background: var(--light-gray-color);
+}

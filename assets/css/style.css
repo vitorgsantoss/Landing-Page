@@ -63,3 +63,53 @@
 
     
 }
+
+.gallery-image{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+
+}
+
+.gallery-image img{
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-image img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+
+}
+
+.contact-form{
+    grid-column: span 2;
+}
+
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group{
+    flex: 1 1 320;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea{
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+}
