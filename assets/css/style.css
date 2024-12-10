@@ -1,4 +1,4 @@
-.intro-content{
+.intro-content {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -7,20 +7,21 @@
     gap: var(--gap);
 }
 
-.intro-text-content, .intro-img-content{
+.intro-text-content,
+.intro-img-content {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    
+
 }
 
-.intro-img-content img{
+.intro-img-content img {
     max-width: 100%;
     height: auto;
 
 }
 
-.top3-content{
+.top3-content {
     min-height: 100vh;
     display: flex;
     flex-flow: column;
@@ -29,29 +30,29 @@
     text-align: center;
 }
 
-.grid-content-heading{
+.grid-content-heading {
     margin-bottom: 1rem;
 }
 
-.grid-description{
+.grid-description {
     margin-bottom: 5rem;
 }
 
-.gallery-grid{
+.gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
     counter-reset: grid-counter;
 }
 
-.gallery-grid h3{
+.gallery-grid h3 {
     font-size: 3rem;
     position: relative;
     padding-left: 6rem;
     padding-bottom: 2rem;
 }
 
-.gallery-grid h3::before{
+.gallery-grid h3::before {
     counter-increment: grid-counter;
     content: counter(grid-counter);
     position: absolute;
@@ -60,11 +61,9 @@
     font-size: 6rem;
     font-style: italic;
     transform: rotate(3deg);
-
-    
 }
 
-.gallery-image{
+.gallery-image {
     width: 100%;
     max-width: 36rem;
     max-height: 36rem;
@@ -72,44 +71,73 @@
 
 }
 
-.gallery-image img{
+.gallery-image img {
     transition: all 300ms ease-in-out;
 }
 
-.gallery-image img:hover{
+.gallery-image img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 
 }
 
-.contact-form{
+.contact-form {
     grid-column: span 2;
 }
 
-.contact-form .form-grid{
+.contact-form .form-grid {
     border: none;
     display: flex;
     flex-flow: row wrap;
     gap: var(--gap);
 }
 
-.form-grid legend{
+.form-grid legend {
     font-style: italic;
     font-size: 1.6rem;
     margin-bottom: 3rem;
 }
 
-.form-group{
-    flex: 1 1 320;
+.form-group {
+    flex: 1 1 320px;
 }
 
-.form-group label{
+.form-group label {
     display: block;
     margin-bottom: 1rem;
 }
 
 .form-group input,
-.form-group textarea{
+.form-group textarea {
     border: none;
     background: var(--white-color);
     padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 10px 2px var(--secondary-color);
+}
+
+.form-group button{
+    border: 0.5rem solid var(--white-color);
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 300ms all ease-in-out;
+}
+
+.form-group button:hover{
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.footer{
+    text-align: center;
+    margin: 0;
+    padding: 3rem;
 }
