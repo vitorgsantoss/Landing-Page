@@ -58,5 +58,6 @@
 }
 
 .menu-spacing{
-    height: 6.5rem;
+    height: 4rem;
+    display: block;
 }
