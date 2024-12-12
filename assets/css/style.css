@@ -92,6 +92,10 @@
     max-height: 36rem;
     overflow: hidden;
 }
+
+.responsive-table{
+    overflow-x: auto;
+}
   
 .contact-form {
     grid-column: span 2;
